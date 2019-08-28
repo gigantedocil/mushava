@@ -1,0 +1,22 @@
+version: '2'
+services:
+  mushava-app:
+    image: mushava
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - SPRING_PROFILES_ACTIVE=prod,swagger
+      - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mushava-mysql:3306/mushava?useUnicode=true&characterEncoding=utf8&useSSL=false
+      - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
+      - SPRING_DATA_JEST_URI=http://mushava-elasticsearch:9200
+      - SPRING_ELASTICSEARCH_REST_URIS=http://mushava-elasticsearch:9200
+    ports:
+      - 8080:8080
+  mushava-mysql:
+    extends:
+      file: mysql.yml
+      service: mushava-mysql
+  mushava-elasticsearch:
+    extends:
+      file: elasticsearch.yml
+      service: mushava-elasticsearch

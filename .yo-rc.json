@@ -1,0 +1,46 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "mushava",
+    "packageName": "io.github.gigantedocil.mushava",
+    "packageFolder": "io/github/gigantedocil/mushava",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "protractor"
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "pt-pt",
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "6.2.0",
+    "jwtSecretKey": "MDc0YTk0ZjU5Yzc0NzM1M2EyZWZlZmY5ZGNkNDM3MjExN2M2ODY2NTUyYTRjM2FhYmJlZmExYTRiYzY5OTE2MjlmYmMxMmMwYzQzYjI3YTkzY2VhM2YxY2RmM2RjMjAxMmRhMTE4YzUyM2M5ZGI3MjIwMjdjNDVmOGExNGZlODg=",
+    "clientTheme": "none",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "blueprints": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "gigantedocil",
+  "repository-name": "mushava"
+}
